@@ -1,11 +1,5 @@
-# Laravel 10 Livewire CRUD Application Tutorial
+# Laravel 10 Livewire CRUD 
 Learn how to develop a Laravel 10 Livewire CRUD application
-
-> The complete tutorial step by step guide is available on my blog. [Laravel 10 Livewire CRUD Application](https://www.allphptricks.com/laravel-10-livewire-crud-application-tutorial/)
-
-## Blog
-https://www.allphptricks.com/
-
 
 ## Installation 
 Make sure that you have setup the environment properly. You will need minimum PHP 8.1, MySQL/MariaDB, and composer.
