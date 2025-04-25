@@ -18,6 +18,7 @@
                         <th scope="col">S#</th>
                         <th scope="col">Name</th>
                         <th scope="col">Description</th>
+                        <th scope="col">Price</th>
                         <th scope="col">Action</th>
                       </tr>
                     </thead>
@@ -27,6 +28,7 @@
                                 <th scope="row">{{ $loop->iteration }}</th>
                                 <td>{{ $product->name }}</td>
                                 <td>{{ $product->description }}</td>
+                                <td>{{ $product->price}}</td>
                                 <td>
                                     <button wire:click="edit({{ $product->id }})" 
                                         class="btn btn-primary btn-sm">

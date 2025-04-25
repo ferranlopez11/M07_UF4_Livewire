@@ -29,7 +29,19 @@
                             @endif
                         </div>
                     </div>
-                    
+
+                    <div class="mb-3 row">
+                        <label for="price" class="col-md-4 col-form-label text-md-end text-start">Product Price</label>
+                        <div class="col-md-6">
+                            <input type="text" class="form-control @error('price') is-invalid @enderror" id="price" wire:model="price" placeholder="0.00"
+                            inputmode="decimal" pattern="^\d*\.?\d{0,2}$" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1')">
+                            @if ($errors->has('price'))
+                                <span class="text-danger">{{ $errors->first('price') }}</span>
+                            @endif
+                        </div>
+                    </div>
+
+
                     <div class="mb-3 row">
                         <button type="submit" class="col-md-3 offset-md-5 btn btn-success">
                              Save
